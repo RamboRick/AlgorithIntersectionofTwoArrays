@@ -1,5 +1,5 @@
 package leetcode350;
-import java.util.TreeMap;
+import java.util.HashMap;
 import java.util.ArrayList;
 //350. Intersection of Two Arrays II
 // TreeMap
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Solution {
 	public int[] intersect(int[] nums1, int[] nums2){
 		
-		TreeMap<Integer, Integer> arr = new TreeMap<Integer, Integer>();
+		HashMap<Integer, Integer> arr = new HashMap<Integer, Integer>();
 		for(int num : nums1){
 			if (!arr.containsKey(num)){
 				arr.put(num, 1);
